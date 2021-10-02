@@ -1,0 +1,21 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
+import { BrowserRouter } from 'react-router-dom';
+import './App.css';
+import Menu from './components/Menu';
+import Rotas from './Rotas';
+
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <Menu />
+        <Container>
+          <Rotas />
+        </Container>
+      </BrowserRouter>
+    </>
+  );
+}
+
+export default App;
